@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Dallas Smith - Omega 6ix </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Dallas Smith - Omega 6ix
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- why section -->
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Omega 6ix
+        </h2>
+      </div>
+      <div class="why_container">
+        <br>
+        <p>The Omega 6ix Bot was created to act as a more competitive ranking system for the video game Omega Strikers. The bot facilitates private matches by handling team captain selection, lobby creation, and team communication channels. It tracks player ratings, maintains leaderboards, facilitates level changes, and automates administrative tasks such as bans, reports, and support and player categorization based on ratings.</p>
+        <p>I created this app using C# with the DSharpplus library and used MongoDB as a database to store all the players, games, and any other information stored for the server.</p>
+        <hr/>
+        <h3>Main Functionality</h3>
+        <p>The bot automates rank checks for users, assigning them discord roles based on their in-game rank. It facilitates match queues, creating lobbies when six players join. The bot initiates a team captain process to determine teams and establishes dedicated channels for team communication within the Discord server.</p>
+        <p>For the automated rank check system, the bot scrapes this website (https://corestrike.gg) for the players rank.</p>
+        <details>
+        <summary>Bot Commands</summary>
+        <div>
+            <ul>
+            <li><b>!q</b> - adds the player to the queue for a game.</li>
+            <li><b>!leave</b> - removes the player from the queue.</li>
+            <li><b>!status</b> - returns the status of the queue displaying all players in the queue.</li>
+            <li><b>!spectate</b> - provides details to the specified game to allow the player to spectate.</li>
+            <li><b>!report</b> - reports a game either as a win or a loss for the player.</li>
+            <li><b>!rankcheck</b> - rank checks the player into their assigned discord ranks.</li>
+            <li><b>!stats</b> - provides the user with their current stats within the server.</li>
+            </ul>
+        </div>
+        </details>
+        <hr/>
+        <h3>Admin Automation</h3>
+        <p>The bot automates admin tasks, including banning users and preventing them from queuing by a single command. It offers functionality to automatically unban users and notify them via direct message. Additionally, the bot provides commands for handling faulty rank checks, false reports, game cancellations, and resetting games and ranks for a new season.</p>
+        <details>
+        <summary>Admin Commands</summary>
+        <div>
+            <ul>
+            <li><b>!update_leaderboard</b> - manually updates the leaderboard aside from the automatic hourly update.</li>
+            <li><b>!retrieve_game</b> - retrieves all the info about a game such as teams, players, win%, and the winning team along with time stamps. This allows admins to:
+                <ul>
+                <li>Cancel the match</li>
+                <li>Reverse the outcome</li>
+                <li>Add 2 hours to the report time</li>
+                </ul>
+            </li>
+            <li><b>!retrieve_player</b> - retrieves a players information including their stats, in game name, and when they registered. This allows admins to unregister players from the server.</li>
+            <li><b>!ban</b> - bans a player for a specified number of days.</li>
+            <li><b>!unban</b> - manually unbans a player before their time is complete.</li>
+            <li><b>!get_record</b> - retrieves a players ban record.</li>
+            <li><b>!wipe_games</b> - removes all games in the database.</li>
+            <li><b>!reset_mmr</b> - resets all players ratings to default values.</li>
+            </ul>
+        </div>
+        </details>
+        <hr/>
+        <h3>Summary</h3>
+        <p>I developed this bot to foster a competitive community for an upcoming game, offering an alternative to the built-in ranking system. The bot underwent beta testing, incorporating real player feedback and bug reports for immediate resolution. A partnership with the game itself was secured, resulting in in-game currency and loot for promotional giveaways during the inaugural season. This project enriched my consumer experience, involving listening to feedback, addressing consumer desires, and exploring alternative solutions through direct communication..</p>
+        <p>If you are interested in seeing the bot in action, here is an invite link to the discord server: <div class="btn-box"><a href="https://discord.gg/AJvdRPAhyu">Discord</a></div></p>
+        <p>Update: The game has since parished. The server is still up for demo purposes.</p>
+        <div class="btn-box">
+          <a href="https://github.com/DallasSmith1/Omega6">Git Repository</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Email
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  dallasagsmith@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_social">
+              <a href="https://github.com/DallasSmith1">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/dallas-smith1/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Documents
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <span>Resume</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <script src="https://kit.fontawesome.com/e183642619.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
