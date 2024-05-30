@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Dallas Smith - UNO </title>
+  <title> Dallas Smith - Album Media </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -50,7 +50,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Dallas Smith - UNO
+              Dallas Smith - Album Media
             </span>
           </a>
 
@@ -80,24 +80,30 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          UNO
+          Album Media
         </h2>
       </div>
       <div class="why_container">
         <br>
-        <p>This is a recreated version of the card game UNO using WPF and the .NET framework. This was created for a school project and I created every single aspect of it, including images and audio (except for background music and sparkle effect).</p>
+        <p>I developed Almbum Media as a personal project to visualize and share family photos and movies stored on an external hard drive. The platform allows friends and family connected to my home WiFi to create accounts, watch movies, and navigate the library akin to an online streaming service. Users can upload photos, which are tagged using Microsoft Azure's Computer Vision model for easier search. Additionally, users can share and download uploaded photos within the app.</p>
+        <p>I used WPF and the .NET framework to create this applicationwith originally using a local MariaDB database.</p>
+        <h3>Features</h3>
+        <p>The app allows movie streaming of all movies I have stored on the 5TB hard drive. (All movies were pre-owned on DVD and converted to mp4 for this project):</p>
+        <img src="/images/am1.png" width="100%"/>
+        <p>Due to the application being built in the .NET framework, there weren't many options for video players, so I had to create my own:</p>
+        <img src="/images/am2.png" width="100%"/>
+        <p>The photo storage section will store as many photos as the drive can handle (5TB) and every single photo uploaded will have tags stamped to it to identify it via search results:</p>
+        <table>
+        <tr>
+            <td><img src="/images/am3.png" width="100%" height="100%"/></td>
+            <td><img src="/images/am4.png" width="100%" height="100%"/></td>
+        </tr>
+        </table>
         <hr/>
-        <h3>About</h3>
-        <p>
-        UNO is a simple card game where each player starts with 7 cards thats consist of cards that can be red, blue, yellow, or green, and be a basic number card or a special card that allows you to skip a turn, pick up 2, pickup 4, colour swap, or reverse the order of play.
-        To play a card, you can only play 1 card each turn, and the card must be either the same colour and/or card type of the current card on top of the discard pile. Another card that can be played are the black cards, which can be played on top of any card.
-        <img src="images/uno-display.png" width="100%"/>
-        </p>
-        <h3>Known Bug</h3>
-        <p>There is 1 single bug, which is a structural bug and can only b fixed by restructuring the code of the app. When creating this project, I used this to be my async function learning project. The bug is related to a timing issue with a synchronous and asynchronous function accessing the same variable at the same time.<br/>
-        I have gone through multiple testing and came to the conclusion its solely based on a timing issue. The bug causes the app to crash, but the bug could occur at any point in time, ranging from the first time playing a card to a bot playing a card 6 games deep into the app.</p>
-        <div class="btn-box" target="_blank">
-            <a href="https://github.com/DallasSmith1/UNO?tab=readme-ov-file">Git Repository</a>
+        <h3>Summary</h3>
+        <p>I enjoyed creating this app and gained new skills, including Computer Vision, working with APIs, and setting up automated no-reply emails. The project was a valuable introduction to desktop app development, revealing the limitations of WPF and sparking my curiosity to explore alternative frameworks. This led me to discover Tauri, which I adopted for developing a desktop transit app after completing this project.</p>
+        <div class="btn-box">
+            <a href="https://github.com/DallasSmith1/AlbumMedia" target="_blank">Git Repository</a>
         </div>
     </div>
   </section>
@@ -115,7 +121,7 @@
               Email
             </h4>
             <div class="contact_link_box">
-              <a href="mailto:dallasagsmith@gmail.com">
+              <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
                   dallasagsmith@gmail.com
