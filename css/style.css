@@ -997,6 +997,9 @@ a:focus {
   display: flex;
   justify-content: space-between; /* Distributes space between the images */
   gap: 10px; /* Optional: adds space between the images */
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .image-container img {
